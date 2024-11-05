@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>발로란트 유저들을 위한 실력 기르기 사이트</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>발로란트 유저들을 위한 실력 기르기 사이트</h1>
+        <p>에이밍 연습, 정확도 훈련, 팀워크 연습을 통해 실력을 길러보세요!</p>
+
+        <!-- 에이밍 훈련 섹션 -->
+        <section id="aimTraining">
+            <h2>에이밍 훈련</h2>
+            <button id="startAimTraining">에이밍 훈련 시작</button>
+            <div id="gameArea"></div>
+            <p>표적을 클릭한 횟수: <span id="aimScore">0</span></p>
+        </section>
+
+        <!-- 정확도 훈련 섹션 -->
+        <section id="accuracyTraining">
+            <h2>정확도 훈련</h2>
+            <button id="startAccuracyTraining">정확도 훈련 시작</button>
+            <div id="accuracyArea"></div>
+            <p>정확도: <span id="accuracy">0%</span></p>
+        </section>
+
+        <!-- 팀워크 훈련 섹션 -->
+        <section id="teamworkTraining">
+            <h2>팀워크 훈련</h2>
+            <div id="scenario">
+                <h3>상황</h3>
+                <p id="situationText"></p>
+            </div>
+            <div id="choices">
+                <button class="choiceButton" onclick="selectChoice(1)">옵션 1</button>
+                <button class="choiceButton" onclick="selectChoice(2)">옵션 2</button>
+                <button class="choiceButton" onclick="selectChoice(3)">옵션 3</button>
+            </div>
+            <div id="result">
+                <h3>결과</h3>
+                <p id="resultText"></p>
+                <button onclick="nextScenario()">다음 상황</button>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
